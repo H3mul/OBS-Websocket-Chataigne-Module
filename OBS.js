@@ -127,15 +127,17 @@ function wsMessageReceived(message) {
         } else {
             local.send('{"op": 1,"d": {"rpcVersion": 1,"authentication": "Chataigne","eventSubscriptions": ' + toDecimal(newEventSub) + '} }');
         }
-    } else if (obsObj.op == 2) {
-        //TODO
-        GetStudioModeEnabled(7);
-        removeAllValues();
-        GetSceneList(7);
-        GetInputList(7);
-        GetCurrentProgramScene(7);
+    } // else if (obsObj.op == 2) {
+    //     //TODO
+    //     GetStudioModeEnabled(7);
+    //     removeAllValues();
+    //     GetSceneList(7);
+    //     GetInputList(7);
+    //     GetCurrentProgramScene(7);
 
-    }
+    // }
+    return;
+
     /* ************ CHANGED VALUES WITH MESSAGE RECEIVED ******************** */
     //GetSceneCollectionList
     if (d.requestType == "GetSceneCollectionList") {
